@@ -161,6 +161,16 @@ hr {
     grid-column: 1 / -1;
 }
 
+.footer {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    row-gap: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+}
+
 @media only screen and (max-width: 720px) {
     .image-wrapper {
         grid-template-columns: 1fr;
@@ -189,7 +199,7 @@ hr {
         font-size: 2rem;
     }
 
-    .text {
+    .text, .footer {
         font-size: 1.6rem;
     }
 }
